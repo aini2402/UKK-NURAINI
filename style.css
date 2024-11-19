@@ -1,0 +1,382 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+header {
+    background-color: pink;
+    justify-content: space-between;
+    display: flex;
+}
+
+.logo {
+    width: 100%;
+    max-width: 130px;
+    margin: 20px;
+}
+
+.logo:hover {
+    transform: scale(0.9);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0 550px;
+}
+.btn-order {
+    background-color: rgb(243, 233, 235);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 20px;
+}
+
+/* Hero */
+
+#hero {
+    background-color: rgb(252, 246, 247);
+    display: flex;
+}
+
+.hero-content {
+    margin: 150px 40px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width:550px;
+    border-radius: 10px;
+    margin: 40px 20px 40px 600px;
+}
+
+.btn-primary {
+    background-color: rgb(206, 149, 206);
+    text-decoration: none;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin: 20px auto 10px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: rgb(124, 69, 124);
+}
+
+p {
+    font-size: 1.3rem;
+    color: rgb(156, 97, 156);
+    margin-bottom: 40px;
+}
+
+.hero-content a {
+    color: aliceblue;
+}
+
+/* Products */
+
+#products {
+    background-color: rgb(255, 236, 239);
+}
+
+#products h2 {
+    padding: 40px;
+    font-size: 2rem;
+}
+
+.products-list {
+    display: flex;
+}
+
+.product {
+    display: block;
+}
+
+.product img {
+    width: 100%;
+    max-width: 350px;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.product img:hover {
+    transform: scale(0.9);
+}
+
+.product h3 {
+    text-align: center;
+}
+
+.product p {
+    text-align: center;
+    padding: 20px 0 50px;
+
+}
+
+/* Testimonial */
+
+#testimonials {
+    background-color: rgb(252, 246, 247);
+}
+
+#testimonials h2 {
+    text-align: center;
+    padding: 40px;
+    font-size: 2rem;
+}
+
+.testi img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    margin: 65px;
+}
+
+.testi img:hover {
+    transform: scale(0.9);
+}
+
+.testimonials {
+    display: flex;
+}
+
+.testi-txt {
+    align-content: center;
+}
+
+/* Contact */
+
+#contact {
+    background-color: rgb(255, 236, 239);
+}
+
+#contact h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 3px 690px;
+    padding: 8px;
+}
+
+.btn-pri {
+    width: 100%;
+    max-width: 200px;
+    margin: 3px 860px 20px;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+/* Footer */
+
+.social img {
+    width: 100%;
+    max-width: 50px;
+    margin: 10px;
+}
+
+footer {
+    background-color: pink;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* Media Quaries  for Responsiveness */
+
+@media screen and (max-width: 768px) {
+    /* Header */
+    header {
+        background-color: pink;
+        justify-content: space-between;
+        display: block;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 100%;
+        max-width: 150px;
+        margin: 10px;
+    }
+    
+    .logo:hover {
+        transform: scale(0.9);
+    }
+    
+    nav {
+        display: block;
+        
+    }
+    
+    nav a{
+        text-decoration: none;
+        font-size: 1.5rem;
+        margin: 20px;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+        margin: 0;
+        font-size: 0.7rem;
+    }
+    .btn-order {
+       display: none;
+    }
+
+    /* Hero */
+
+#hero {
+    background-color: white;
+    display: block;
+}
+
+.hero-content {
+    margin: 0 5px;
+}
+
+.hero-image {
+    width: 100%;
+    max-width:450px;
+    border-radius: 10px;
+    margin: 40px 0 40px 180px;
+}
+
+.btn-primary {
+    background-color: rgb(206, 149, 206);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 0.6rem;
+    border-radius: 10px;
+    margin: 10px auto 5px;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: rgb(124, 69, 124);
+    margin: 20px 0 10px;
+}
+
+p {
+    font-size: 1.3rem;
+    color: rgb(156, 97, 156);
+    margin-bottom: 40px;
+}
+
+.hero-content a {
+    color: aliceblue;
+}
+
+    /* Products */
+
+#products {
+    background-color: rgb(255, 236, 239);
+}
+
+#products h2 {
+    padding: 40px;
+    font-size: 2rem;
+}
+
+.products-list {
+    display: block;
+}
+
+.product {
+    display: block;
+}
+
+.product img {
+    width: 100%;
+    max-width: 390px;
+    justify-content: space-between;
+    margin: 20px 190px;
+}
+
+    /* Testimonial */
+
+#testimonials {
+    background-color: rgb(252, 246, 247);
+}
+
+#testimonials h2 {
+    text-align: center;
+    padding: 40px;
+    font-size: 2rem;
+}
+
+.testi img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 15px;
+    margin: 65px;
+}
+
+.testi img:hover {
+    transform: scale(0.9);
+}
+
+.testimonials {
+    display: block;
+    text-align: center;
+}
+
+.testi-txt {
+    align-content: center;
+}
+
+    /* Contact */
+
+#contact {
+    background-color: rgb(255, 236, 239);
+}
+
+#contact h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+form input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.btn-pri {
+    width: 100%;
+    max-width: 200px;
+    margin: 10px 280px;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+
+
+}
+
